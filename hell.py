@@ -5,17 +5,17 @@ for item in L:
 
 print(Y)
 
-numbers = range(10)
+# numbers = range(10)
 new_dict_for = {}
 
 # Add values to `new_dict` using for loop
-for n in numbers:
+for n in range(6):
     if n%2==0:
         new_dict_for[n] = n**2
 
 print(new_dict_for)
 # Use dictionary comprehension
-new_dict_comp = {n:n**2 for n in numbers if n%2 == 0}
+new_dict_comp = {n:n**2 for n in range(6) if n%2 == 0}
 
 print(new_dict_comp)
 # 
